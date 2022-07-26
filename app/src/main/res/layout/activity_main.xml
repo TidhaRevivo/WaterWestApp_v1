@@ -46,4 +46,12 @@
         android:id="@+id/top"
         />
 
+    <TextView
+        android:id="@+id/waterlevel"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="291dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
