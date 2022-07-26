@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaterWestApp">
         <activity
+            android:name=".WaterUsageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlertActivity"
+            android:exported="false"
+            />
+        <activity
             android:name=".OnBoarding"
             android:exported="true">
             <intent-filter>
