@@ -21,6 +21,7 @@ ECHO = 18  # 24 BCM
 
 def callback(test_input):
 	print('signal received!', test_input)
+	return True
 
 
 # SetUp
@@ -36,6 +37,8 @@ print('waiting for signal')
 while True:
 # it would be a good idea to start timing here -- suggestion from Julian
 	GPIO.output(TRIG, 1)
+	start= time.time()
+	
 	time.sleep(0.00001)
 	GPIO.output(TRIG, 0)
 	time.sleep(2)
