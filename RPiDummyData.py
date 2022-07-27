@@ -20,19 +20,18 @@ ECHO = 18  # 24 BCM
 
 START_TIME = None
 END_TIME = None
-DELAY = 0.0011711221822102865
+DELAY = 0.0025055610911051433
+Radius = 0.135 #meters 
 
 def callback(test_input):
 	END_TIME = time.time()
 	time_delta = END_TIME - START_TIME + DELAY
 	distance = time_delta * 343 / 2
-	Empty_Tank = math.pi * 0.135 * 2 * distance * 1000
-	Full_Tank = math.pi * 0.135 * 2 * 0.44 * 1000
+	Empty_Tank = math.pi * Radius**2 * distance * 1000
+	Full_Tank = math.pi * Radius ** 2 * 0.44 * 1000
 	Water = Full_Tank - Empty_Tank
-	print(time_delta)
-
-
-
+	print("Water: " +  str(Water), "distance: " + str(distance))
+	
 # SetUp
 GPIO.setup(TRIG,GPIO.OUT, initial = 0)
 GPIO.setup(ECHO,GPIO.IN)
@@ -49,4 +48,3 @@ while True:
 	time.sleep(1)
 
 		
-
