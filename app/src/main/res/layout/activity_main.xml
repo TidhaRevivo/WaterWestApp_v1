@@ -16,7 +16,7 @@
         android:transitionName="apple"
         app:layout_constraintBottom_toBottomOf="@+id/bottom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/start"
         app:layout_constraintTop_toTopOf="@+id/top"
         app:layout_constraintVertical_bias="1.0" />
@@ -56,20 +56,19 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/AlertBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
+        android:layout_marginStart="152dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="136dp"
         android:text="Alerts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.596" />
+        app:layout_constraintVertical_bias="0.671" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/LitersBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="141dp"
@@ -78,9 +77,10 @@
         android:text="Liters today:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
 
     <TextView
         android:id="@+id/textView2"
@@ -91,7 +91,6 @@
         android:layout_marginEnd="192dp"
         android:layout_marginBottom="5dp"
         android:text="Your Water Tank"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
