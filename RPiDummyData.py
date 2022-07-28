@@ -18,37 +18,33 @@ GPIO.setmode(GPIO.BOARD)
 TRIG = 16  # 23 BCM
 ECHO = 18  # 24 BCM
 
+START_TIME = None
+END_TIME = None
+DELAY = 0.0025055610911051433
+Radius = 0.135 #meters 
 
 def callback(test_input):
-	print('signal received!', test_input)
-
-
+	END_TIME = time.time()
+	time_delta = END_TIME - START_TIME + DELAY
+	distance = time_delta * 343 / 2
+	Empty_Tank = math.pi * Radius**2 * distance * 1000
+	Full_Tank = math.pi * Radius ** 2 * 0.44 * 1000
+	Water = Full_Tank - Empty_Tank
+	print("Water: " +  str(Water), "distance: " + str(distance))
+	
 # SetUp
-GPIO.setup(TRIG,GPIO.OUT, initial=0)
+GPIO.setup(TRIG,GPIO.OUT, initial = 0)
 GPIO.setup(ECHO,GPIO.IN)
-GPIO.add_event_detect(ECHO, GPIO.RISING, callback=callback)
+GPIO.add_event_detect(ECHO, GPIO.RISING, callback = callback)
 time.sleep(1)
 print('waiting for signal')
 
-	
-	
-	
+
 while True:
-# it would be a good idea to start timing here -- suggestion from Julian
 	GPIO.output(TRIG, 1)
+	START_TIME = time.time()
 	time.sleep(0.00001)
 	GPIO.output(TRIG, 0)
-	time.sleep(2)
+	time.sleep(1)
+
 		
-#  caculations
-	# # while GPIO.input(ECHO)==0:
-	# 	pulse_start = time.time()
-	# while GPIO.input(ECHO)==1:
-	# 	 pulse_end = time.time()
-	# pulse_duration = pulse_end - pulse_start
-	# D = pulse_duration * 17150
-	# D = round(D, 2)
-	# E = math.pi * 10 * 2 * D * 1000
-	# MW = math.pi * 10 * 2 * 200 *1000
-	# W = MW - E
-	# print(W)
