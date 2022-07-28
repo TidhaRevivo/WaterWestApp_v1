@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import exportkit.figma.R;
+
 public class MainActivity extends AppCompatActivity {
     Button LitersBtn, AlertBtn;
     @Override

@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.PagerAdapter;
 
+import exportkit.figma.R;
+
 public class SliderAdapter extends PagerAdapter {
 
     Context context;
