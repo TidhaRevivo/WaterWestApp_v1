@@ -23,6 +23,8 @@ import android.widget.Toast;
 
 import java.util.Currency;
 
+import exportkit.figma.R;
+
 public class OnBoarding extends AppCompatActivity {
 
     ViewPager viewPager2;
@@ -86,13 +88,13 @@ public class OnBoarding extends AppCompatActivity {
             dotsLayout[i] = new TextView(this);
             dotsLayout[i].setText(Html.fromHtml("&#8226;"));
             dotsLayout[i].setTextSize(35);
-            dotsLayout[i].setTextColor(getResources().getColor(R.color.hintColor));
+            //dotsLayout[i].setTextColor(getResources().getColor(R.color.hintColor));
             dots.addView(dotsLayout[i]); //creating dots into the dots layout(dots)
 
         }
         if(dotsLayout.length  >0)
         { // change dot color according to current page number
-            dotsLayout[p].setTextColor(getResources().getColor(R.color.blue_palette));
+          //  dotsLayout[p].setTextColor(getResources().getColor(R.color.blue_palette));
         }
     }
 

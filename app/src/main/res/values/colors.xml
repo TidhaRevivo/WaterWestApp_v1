@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="hintColor">#505050</color>
-    <color name="blue">#0028FB</color>
-    <color name="blue_palette">#007BBD</color>
-    <color name="black_palette">#324A51</color>
-    <color name="bluelight_palette">#95B0B7</color>
-    <color name="background">#E6F4F1</color>
-    <color name="greydark_palette">#596886</color>
-    <color name="purble_palette">#8D6FA7</color>
+	<!-- tank_monitor1 colors -->
 
+	<color name="colorPrimary">#008577</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="purple_200">#FFBB86FC</color>
+	<color name="purple_500">#FF6200EE</color>
+	<color name="purple_700">#FF3700B3</color>
+	<color name="teal_200">#FF03DAC5</color>
+	<color name="teal_700">#FF018786</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="_bg__alerts_ek2_color">#98CED9</color>
+	<color name="rectangle_40_color">#98CFDA</color>
+	<color name="rectangle_39_color">#FFFFFF</color>
+	<color name="alerts_ek3_color">#000000</color>
+	<color name="rectangle_37_color">#42A1BF</color>
+	<color name="water_is_running_low__color">#444444</color>
+	<color name="rectangle_42_color">#61C2D5</color>
+	<color name="water_is_flowing__color">#3F7F34</color>
+	<color name="blue_palate">#98CED9</color>
+	<color name="rectangle_38_color">#FFFFFF</color>
+	<color name="_90__color">#000000</color>
+	<color name="cl">#6D6D6D</color>
+	<color name="usage_hisotry_ek1_color">#444444</color>
+	<color name="log_out_color">#42A1BF</color>
 </resources>

@@ -1,22 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Water West App</string>
-
-    --App intro--
-    <string name="first_slide_title" translatable="false">Title 1</string>
-    <string name="second_slide_title" translatable="false">Title 2</string>
-    <string name="third_slide_title" translatable="false">Title 3</string>
-    <string name="fourth_slide_title" translatable="false">Title 4</string>
-
-    --Descriptions--
-    <string name="first_slide_desc" translatable="false">desc 1</string>
-    <string name="second_slide_desc" translatable="false">desc 2</string>
-    <string name="third_slide_desc" translatable="false">desc 3</string>
-    <string name="fourth_slide_desc" translatable="false">desc 4</string>
-
-
-    --Button--
-    <string name="skip_btn" translatable="false">Skip</string>
-    <string name="next_btn" translatable="false">Next</string>
-    <string name="let_get_started" translatable="false">Lets Get Started</string>
+	<!-- tank_monitor1 strings -->
+<string name="fourth_slide_title">fourth_slide_title</string>
+	<string name="first_slide_title">first_slide_title</string>
+	<string name="second_slide_title">second_slide_title</string>
+	<string name="third_slide_title">third_slide_title</string>
+<string name="first_slide_desc">first_slide_desc</string>
+	<string name="second_slide_desc">second_slide_desc</string>
+	<string name="third_slide_desc">third_slide_desc</string>
+	<string name="fourth_slide_desc">fourth_slide_desc</string>
+	<string name="alerts_ek3_string">Alerts</string>
+	<string name="water_is_running_low__string">Water Is Running Low!</string>
+	<string name="_16_7_22_string">16/7/22</string>
+	<string name="resolved_string">RESOLVED</string>
+	<string name="you_might_have_a_leak__string">You might have a leak!</string>
+	<string name="_19_7_22_string">19/7/22</string>
+	<string name="resolved_ek1_string">RESOLVED</string>
+	<string name="water_is_running_low__ek1_string">Water Is Running Low!</string>
+	<string name="_22_7_22_string">22/7/22</string>
+	<string name="resolved_ek2_string">RESOLVED</string>
+	<string name="water_is_flowing__string">Water is Flowing!</string>
+	<string name="just_now_string">Just Now</string>
+	<string name="active_string">ACTIVE</string>
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="_90__string">90%</string>
+	<string name="you_have_180l_remaining_string">You have 180LRemaining</string>
+	<string name="your_water_tank_string">Your Water Tank</string>
+	<string name="usage_hisotry_string">Usage Hisotry</string>
+	<string name="_25l_string">25L</string>
+	<string name="liters_today_string">Liters Today</string>
+	<string name="usage_hisotry_ek1_string">Usage Hisotry</string>
+	<string name="_25l_ek1_string">25L</string>
+	<string name="liters_today_ek1_string">Liters Today</string>
+	<string name="log_out_string">Log Out</string>
 
 </resources>

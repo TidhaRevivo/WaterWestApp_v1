@@ -74,9 +74,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/button_style_purple"
-            android:text="@string/let_get_started"
-            android:textAllCaps="false"
+            android:background="@drawable/button_style_purple" android:textAllCaps="false"
             android:visibility="invisible" />
 
 
