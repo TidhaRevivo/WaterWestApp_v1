@@ -60,10 +60,10 @@ while True:
 		distance = pulse_duration * 171.5
 		distance = round(distance, 2) #round it to two decimal place
 		Empty_Tank = math.pi * Radius ** 2 * distance * 1000
-		Water = Full_Tank - Empty_Tank
+		Water = round((Full_Tank - Empty_Tank), 3)
 		data = {
 			"Water Level" : Water,
-			"Date" : Time.time()
+			"Date" : time.time()
 		}
 		
 		print (str(Full_Tank) + " - " + str(Empty_Tank) + " = " + str(Water))
